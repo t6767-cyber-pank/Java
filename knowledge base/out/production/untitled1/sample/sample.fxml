@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="700.0" stylesheets="application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+       <Button fx:id="button" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" onAction="#onClickB1" prefHeight="20.0" prefWidth="200.0" styleClass="redbutton" text="Начать" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="1160.0">
+       </Button>
+       <ComboBox fx:id="cb" layoutX="210.0" layoutY="5.0" onAction="#CB" prefWidth="300.0" />
+       <ComboBox fx:id="cb1" layoutX="515.0" layoutY="5.0" onAction="#CB1" prefWidth="350.0" />
+       <ComboBox fx:id="cb2" layoutX="870.0" layoutY="5.0" onAction="#CB2" prefWidth="400.0" />
+       <HTMLEditor fx:id="edi" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="5.0" layoutY="65.0" prefHeight="630.0" prefWidth="1350.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+       <Button fx:id="buttond" layoutX="5.0" layoutY="35.0" mnemonicParsing="false" onAction="#onClickBd" prefHeight="20.0" prefWidth="200.0" text="Добавить" />
+       <Button fx:id="buttonu" layoutX="210.0" layoutY="35.0" mnemonicParsing="false" onAction="#onClickBu" prefHeight="20.0" prefWidth="200.0" text="Удалить" />
+       <Button fx:id="buttoni" layoutX="415.0" layoutY="35.0" mnemonicParsing="false" onAction="#onClickBi" prefHeight="20.0" prefWidth="200.0" text="Изменить" />
+       <Pane fx:id="panel1" layoutX="5.0" layoutY="65.0" prefHeight="630.0" prefWidth="1350.0" visible="false">
+           <children>
+               <Button fx:id="buttond1" layoutX="247.0" layoutY="0.0" mnemonicParsing="false" onAction="#onClickBd1" prefHeight="26.0" prefWidth="242.0" text="Выберите действие" />
+               <Button fx:id="butclose" layoutX="700.0" layoutY="0.0" mnemonicParsing="false" onAction="#onBclose" prefHeight="26.0" prefWidth="242.0" text="Закрыть" />
+               <Button fx:id="butdiv" layoutX="947.0" layoutY="0.0" mnemonicParsing="false" onAction="#onBdiv" prefHeight="26.0" prefWidth="35.0" text="div" />
+               <Button fx:id="butpre" layoutX="987.0" layoutY="0.0" mnemonicParsing="false" onAction="#onBpre" prefHeight="26.0" prefWidth="35.0" text="pre" />
+               <Button fx:id="buth1" layoutX="1027.0" layoutY="0.0" mnemonicParsing="false" onAction="#onBh1" prefHeight="26.0" prefWidth="35.0" text="H1" />
+               <Button fx:id="buth2" layoutX="1067.0" layoutY="0.0" mnemonicParsing="false" onAction="#onBh2" prefHeight="26.0" prefWidth="35.0" text="H2" />
+               <TextField fx:id="textd" layoutX="0.0" layoutY="0.0" prefHeight="26.0" prefWidth="242.0" />
+               <RadioButton fx:id="rb1" layoutX="502.0" layoutY="5.0" mnemonicParsing="false" onAction="#onRB1" text="Язык" />
+               <RadioButton fx:id="rb2" layoutX="562.0" layoutY="5.0" mnemonicParsing="false" onAction="#onRB2" text="Тема" />
+               <RadioButton fx:id="rb3" layoutX="625.0" layoutY="5.0" mnemonicParsing="false" onAction="#onRB3" text="Статья" />
+               <TextArea fx:id="edi1" layoutX="0.0" layoutY="30.0" prefHeight="600.0" prefWidth="1350.0" />
+           </children>
+       </Pane>
+   </children>
+</AnchorPane>
