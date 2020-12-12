@@ -1,2 +1,2 @@
 # knowledge base(java FX)
-Некоммерческий проект с целью сделать собственный кросплатформенный проект справочник на javaFX  
+A non-commercial project with the aim of making its own cross-platform project javaFX reference
